@@ -1,22 +1,22 @@
 # Install Dependencies and Setting up
-sudo apt install lightdm
-sudo apt install openbox-gnome-session
-sudo apt install openbox
-sudo apt install gnome-terminal
-sudo apt install obmenu
-sudo apt install gedit
+sudo apt update -y
+sudo apt dist-upgrade -y
+sudo apt install sddm -y
+sudo apt install openbox-gnome-session -y
+sudo apt install openbox -y
+sudo apt install gnome-terminal -y
+sudo apt install obmenu -y
+sudo apt install gedit -y
 sudo add-apt-repository ppa:kubuntu-ppa/backports
-sudo apt update
-sudo apt dist-upgrade
-sudo apt install git
-sudo apt install unzip
-sudo apt install nitrogen
-sudo apt install pcmanfm
-sudo apt install lxappearance
-sudo apt install xcompmgr
-sudo apt install pavucontrol
-sudo apt install volti
-sudo apt install gconf-editor
+sudo apt install git -y
+sudo apt install unzip -y
+sudo apt install nitrogen -y
+sudo apt install pcmanfm -y
+sudo apt install lxappearance -y
+sudo apt install xcompmgr -y
+sudo apt install pavucontrol -y
+sudo apt install volti -y
+sudo apt install gconf-editor -y
  
 # Clone Dependencies from GitHub
 git clone https://github.com/yilozt/mutter-rounded
@@ -53,6 +53,6 @@ cd ..
 sudo rm -rf ./HaOS-System-Apps
  
 # END INSTALLATION OF HAOS
- 
+clear
 echo "Installation Finished! Rebooting.."
 sudo sleep 5 ; reboot
